@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RoyalVinyasModulars</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    
+<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Custom.js"></script>
+
+    <script src="js/bower_components/angular/angular.min.js"></script>
+    <script src="js/bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/myApp.js"></script>
+
+</head>
+
+<body ng-app="myApp" ng-controller="mainController">
+
+<nav class="navbar navbar-inverse" id="mobile-navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+       <li><a href="#/" page="home">Home</a>
+                </li>
+                <li><a href="#/service" page="Service">Service</a>
+                </li>
+                <li><a href="#/project" page="Projects">Projects</a>
+                </li>
+                <li><a href="#/about" page="about"> About</a>
+                </li>
+                <li id="contactus"><a href="#/contact" page="contact">Contact Us</a>
+                </li> 
+      </ul>
+      </div>
+  </div>
+</nav>
+
+    <div class="container" id="container">
+      <!-- menu navbar Start -->
+        <div id="navbar">
+            <ul class="nav nav-stacked">
+                <li><a href="#/" page="home">Home</a>
+                </li>
+                <li><a href="#/service" page="Service">Service</a>
+                </li>
+                <li><a href="#/project" page="Projects">Projects</a>
+                </li>
+                <li><a href="#/about" page="about"> About</a>
+                </li>
+                <li id="contactus"><a href="#/contact" page="contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+           <!-- menu navbar end -->
+    
+      
+    
+
+
+    </div>
+
+    <div ng-view class="container-fluid panelContainer ">
+
+        
+         
+        <!-- this is where content will be injected start-->
+            <div ></div>
+       <!-- this is where content will be injected end -->
+      
+
+    </div>
+    <footer class="site-footer footerStyle">
+  <p class="pull-right"><a href="#">Back to top</a></p>
+    <p>footer</a></p>
+    </footer>
+</body>
+
+
+
+</html>
